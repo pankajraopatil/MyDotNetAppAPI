@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDotNetAppAPI", "MyDotNetAppAPI.csproj", "{95DF9B28-484E-1457-B57B-D946230AF31E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95DF9B28-484E-1457-B57B-D946230AF31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95DF9B28-484E-1457-B57B-D946230AF31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95DF9B28-484E-1457-B57B-D946230AF31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95DF9B28-484E-1457-B57B-D946230AF31E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14C2C611-FCBE-4209-9252-6B56D0E27E15}
+	EndGlobalSection
+EndGlobal
