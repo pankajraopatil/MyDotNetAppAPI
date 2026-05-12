@@ -1,6 +1,6 @@
-﻿using Xunit;
+using Xunit;
 
-namespace MyDotNetAppAPI.Tests;
+namespace MyDotNetApp.Tests;
 
 public class SimpleTest
 {
