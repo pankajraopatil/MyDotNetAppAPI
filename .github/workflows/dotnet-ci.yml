@@ -29,7 +29,7 @@ jobs:
 
     # Test
     - name: Test
-      run: dotnet test MyDotNetAppAPI/MyDotNetAppAPI.csproj --no-build --configuration Release --verbosity normal
+      run: dotnet test MyDotNetAppAPI/MyDotNetApp.Tests.csproj --no-build --configuration Release --verbosity normal
 
     # Publish
     - name: Publish
