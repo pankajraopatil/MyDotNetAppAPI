@@ -1,6 +1,5 @@
 name: .NET Core CI/CD Pipeline
 
-# Trigger the workflow on push or pull request to main branch
 on:
   push:
     branches: [ main ]
@@ -10,35 +9,33 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    
+
     steps:
-    # Step 1: Checkout the code
     - name: Checkout code
       uses: actions/checkout@v4
-    
-    # Step 2: Setup .NET SDK
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '6.0.x'
-    
-    # Step 3: Restore dependencies
+
+    # Restore
     - name: Restore dependencies
-      run: dotnet restore
-    
-    # Step 4: Build the application
+      run: dotnet restore MyDotNetAppAPI/MyDotNetAppAPI.csproj
+
+    # Build
     - name: Build
-      run: dotnet build --no-restore --configuration Release
-    
-    # Step 5: Run tests
+      run: dotnet build MyDotNetAppAPI/MyDotNetAppAPI.csproj --no-restore --configuration Release
+
+    # Test
     - name: Test
-      run: dotnet test --no-build --configuration Release --verbosity normal
-    
-    # Step 6: Publish the application
+      run: dotnet test MyDotNetAppAPI/MyDotNetAppAPI.csproj --no-build --configuration Release --verbosity normal
+
+    # Publish
     - name: Publish
       run: dotnet publish MyDotNetAppAPI/MyDotNetAppAPI.csproj --configuration Release --output publish/
-    
-    # Step 7: Upload artifacts (optional)
+
+    # Upload artifacts
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
