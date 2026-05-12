@@ -36,7 +36,7 @@ jobs:
     
     # Step 6: Publish the application
     - name: Publish
-      run: dotnet publish MyDotNetApp/MyDotNetAppAPI.csproj --configuration Release --output publish/
+      run: dotnet publish MyDotNetAppAPI/MyDotNetAppAPI.csproj --configuration Release --output publish/
     
     # Step 7: Upload artifacts (optional)
     - name: Upload build artifacts
